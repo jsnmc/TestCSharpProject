@@ -8,8 +8,17 @@ namespace TestCSharpProject
 {
     class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            // Some changes here
+            string x = "my new change";
+
+            CallNewFeature(x);
+        }
+
+        private static void CallNewFeature(string s)
+        {
+            Console.WriteLine(s);
         }
     }
 }
